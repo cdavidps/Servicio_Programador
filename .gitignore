@@ -1,15 +1,21 @@
-# Entorno virtual y dependencias
-venv/
+# --- PYTHON ---
 __pycache__/
 *.py[cod]
-
-# Variables de entorno (¡CRÍTICO!)
+*$py.class
+venv/
 .env
 
-# Bases de datos y archivos grandes
+# --- FRONTEND (NODE/REACT) ---
+client/node_modules/
+client/dist/
+client/.env
+client/.DS_Store
+
+# --- DATA & LOGS ---
 data/chroma_db/
 *.log
+*.sqlite3
 
-# Carpetas de sistema/IDE
+# --- IDE ---
 .vscode/
-.DS_Store
+.idea/

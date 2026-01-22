@@ -1,13 +1,25 @@
+# --- CORE AI & LANGCHAIN ---
 langchain==0.3.0
-langchain-openai==0.2.0
 langchain-community==0.3.0
 langchain-core==0.3.0
+langchain-openai==0.2.0
+langchain-text-splitters==0.3.0
+langchainhub==0.1.21
+
+# --- VECTOR STORE & EMBEDDINGS ---
 chromadb==0.5.5
-pypdf==4.3.1
-python-dotenv==1.0.1
-pydantic-settings==2.5.2
-streamlit==1.38.0
+sentence-transformers==3.0.1
+langchain-huggingface==0.1.0
+
+# --- BACKEND API ---
 fastapi==0.115.0
 uvicorn==0.30.6
-sentence-transformers
-langchain_huggingface
+pydantic==2.8.2
+
+# --- UTILS & CONFIG ---
+python-dotenv==1.0.1
+pydantic-settings==2.5.2
+tiktoken==0.7.0  # Recomendado para optimizar el conteo de tokens de OpenAI
+
+# --- DOCUMENT LOADERS ---
+pypdf==4.3.1
